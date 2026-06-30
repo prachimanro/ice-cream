@@ -1,0 +1,515 @@
+/* ═══════════════════════════════════════════════
+   style.css  –  Ice Cream Website
+   Bootstrap 5 loaded first; this file adds
+   custom styles and responsive overrides.
+═══════════════════════════════════════════════ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ──────────────  NAVBAR  ────────────── */
+.navbar {
+    padding: 100px;
+}
+
+.navbar-nav .nav-link,
+.oo {
+    font-size: 1rem;
+    color: #000 !important;
+    font-weight: 500;
+    padding: 20px 16px;
+}
+
+.oo:hover {
+    color: rgb(249, 86, 192) !important;
+}
+
+/* Bootstrap dropdown styled to match original */
+.dropdown-menu {
+    background: rgb(249, 86, 192);
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    min-width: 180px;
+}
+
+.dropdown-item {
+    color: #333;
+    font-weight: normal;
+    padding: 10px 15px;
+}
+
+.dropdown-item:hover {
+    background: rgb(249, 86, 192);
+    color: #fff;
+}
+#openLogin {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* ──────────────  HERO SECTION  ────────────── */
+.mainhome {
+    background: #fff;
+    padding: 2rem 0;
+    background-image: url(image/ice.jpg);
+    background-size: cover;      /* Fits entire area */
+    background-position: center; /* Centers image */
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+.min-vh-85 {
+    min-height: 85vh;
+}
+
+
+
+.text h1 {
+    font-size: clamp(2.8rem, 7vw, 80px);
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.text p {
+    line-height: 1.7;
+    color: white;
+    font-size: 1rem;
+}
+
+.rr {
+    margin-top: 2rem;
+}
+
+.btnl {
+    background: rgb(249, 86, 192);
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.btnl:hover {
+    background-color: #dfdfdf;
+    color: rgb(249, 86, 192);
+    transition-duration: 0.5s;
+}
+
+/* ──────────────  ABOUT SECTION  ────────────── */
+.tt {
+    background: #fff;
+}
+
+.mainhome2 {
+    background: url(image/about-img.png) no-repeat center/contain;
+    height: 500px;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.text2 h1 {
+    font-size: clamp(1.8rem, 4vw, 50px);
+    color: #333;
+}
+
+.text2 p {
+    padding-top: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.gtbnt22 {
+    color: white;
+    background-color: rgb(249, 86, 192);
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.gtbnt22:hover {
+    background-color: #dfdfdf;
+    color: rgb(249, 86, 192);
+    transition-duration: 0.5s;
+}
+
+.jj {
+    margin-top: 2rem;
+}
+
+/* ──────────────  SECTION HEADINGS  ────────────── */
+.section-heading h1,
+h1 {
+    color: #333;
+    font-size: clamp(1.6rem, 4vw, 40px);
+    margin-bottom: 8px;
+    margin-left: 0;
+    margin-top: 30px;
+}
+
+.section-heading p,
+p {
+    color: #333;
+    margin-left: 0;
+    margin-bottom: 70px;
+}
+
+/* ──────────────  CARDS  ────────────── */
+.main3 {
+    /* Now uses Bootstrap .row — no manual margin */
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    padding: 30px 20px 20px;
+    transition: 0.3s ease;
+    position: relative;
+    border: none;
+    /* remove fixed height so h-100 works properly */
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+    background-color: rgb(254, 255, 192);
+    transition-duration: 0.5s;
+}
+
+.card img {
+    width: 160px;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price {
+    background: #fff;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -40px auto 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 1;
+    font-style: italic;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0 20px;
+    color: #333;
+}
+
+.btn {
+    background: none;
+    border: 2px solid #ff4fa0 !important;
+    color: #ff4fa0 !important;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff4fa0 !important;
+    color: #fff !important;
+    transition-duration: 0.5s;
+}
+
+.ice {
+    border: 1px solid white;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* ──────────────  SEE MORE BUTTON  ────────────── */
+.yy {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(249, 86, 192);
+    padding: 15px 35px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 50px;
+    
+}
+
+.seemore {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.yy:hover {
+    background-color: #dfdfdf;
+    color: rgb(249, 86, 192);
+    transition-duration: 0.5s;
+}
+
+/* ──────────────  SERVICES  ────────────── */
+.boxxx {
+    margin-top: 40px;
+}
+
+.diss {
+    /* Now uses Bootstrap .row */
+}
+
+.boxice1 {
+    border: 1px solid rgb(249, 86, 192);
+    border-radius: 6px;
+    height: auto;
+    min-height: 150px;
+}
+
+.boxice1 p {
+    margin-left: 0;
+    margin-top: 12px;
+    font-weight: lighter;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.boxice1 h2 {
+    font-weight: lighter;
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+/* ──────────────  TESTIMONIAL  ────────────── */
+.testpmain {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.testpmain h1 {
+    text-align: center;
+    margin-left: 0;
+}
+
+.testp {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+}
+
+.testp p {
+    text-align: center;
+    margin-left: 0;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 0;
+}
+
+.testp h3 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.testpmainimg {
+    text-align: center;
+    size: 100%;
+}
+
+.testpmainimg img {
+    margin: 0 auto;
+    display: block;
+    size: 100%;
+    margin-top: -50px;
+}
+
+/* ──────────────  FOOTER  ────────────── */
+.footer1 {
+    background-color: #333;
+    margin-top: 50px;
+}
+
+.contact-section {
+    padding: 0;
+}
+
+.contact-form h2 {
+    font-size: clamp(1.5rem, 4vw, 40px);
+    margin-bottom: 15px;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-form button {
+    background: #f58bb1;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.contact-form button:hover {
+    background: #ff4d88;
+}
+
+/* Newsletter */
+.newsletter h3 {
+    font-size: clamp(1.4rem, 3.5vw, 35px);
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+.newsletter button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #f58bb1;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.newsletter button:hover {
+    background: #ff4d88;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #444;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* ════════════════════════════════════════════
+   RESPONSIVE OVERRIDES
+════════════════════════════════════════════ */
+
+/* Tablet (< 992px) */
+@media (max-width: 991px) {
+    .mainhome2 {
+        height: 350px;
+    }
+
+    .text h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Mobile (< 768px) */
+@media (max-width: 768px) {
+    .text h1 {
+        font-size: 2.4rem;
+    }
+
+    .text2 h1 {
+        font-size: 1.8rem;
+    }
+
+    .mainhome2 {
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    .hero-img {
+        max-height: 50vw;
+    }
+
+    .testp {
+        padding: 1.5rem;
+    }
+}
+
+/* Small phones (< 576px) */
+@media (max-width: 576px) {
+    .text h1 {
+        font-size: 2rem;
+    }
+
+    .text2 h1 {
+        font-size: 1.5rem;
+    }
+
+    .btnl,
+    .gtbnt22,
+    .yy {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+
+    .mainhome2 {
+        height: 220px;
+    }
+
+    .card img {
+        width: 120px;
+    }
+
+    .boxice1 {
+        min-height: auto;
+    }
+}
